@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilDetayActivity"
+    android:background="#e9e6df"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profildetay_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e9e6df"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="-384dp"
+        android:layout_marginTop="-250dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:clickable="true"
+            android:text=" İş Bilgileri"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/profildetay_isyeri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:drawableLeft="@drawable/ic_isyeri"
+            android:hint="  İş yeri"
+            android:textColor="@android:color/black"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="2dp"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+        <TextView
+            android:id="@+id/profildetay_iskonumu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:hint="  Çalıştığı Pozisyon"
+            android:layout_marginLeft="2dp"
+            android:drawableLeft="@drawable/ic_iskonumu"
+            android:clickable="true"
+            android:textColor="@android:color/black"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-30dp"
+            android:background="?android:attr/listDivider"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="-65dp"
+        android:layout_marginLeft="-385dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-30dp"
+            android:background="?android:attr/listDivider"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:gravity="start"
+            android:text="Kişisel Bilgiler"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="normal|bold|italic" />
+        <TextView
+            android:id="@+id/profildetay_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:paddingStart="8dp"
+            android:paddingLeft="10dp"
+            android:hint=" Facebook Adresi"
+
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+        <TextView
+            android:id="@+id/profildetay_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:drawableLeft="@drawable/tw"
+            android:paddingStart="10dp"
+            android:paddingLeft="11dp"
+            android:hint="Twitter Adresi"
+            android:layout_marginLeft="-3dp"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+        <TextView
+            android:id="@+id/profildetay_instagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:drawableLeft="@drawable/insta"
+            android:paddingStart="8dp"
+            android:paddingLeft="10dp"
+            android:hint="  Instragram Adresi"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/profildetay_telefon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:drawableLeft="@drawable/ic_telefon"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:hint="  Telefon Numarası"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+
+
+        <TextView
+            android:id="@+id/profildetay_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:textColor="@android:color/holo_blue_dark"
+            android:drawableLeft="@drawable/ic_mail"
+            android:clickable="true"
+            android:hint="  E-Posta"
+            android:paddingStart="11dp"
+            android:paddingLeft="11dp"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+        <TextView
+            android:id="@+id/profildetay_websitesi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:textColor="@android:color/holo_blue_dark"
+            android:drawableLeft="@drawable/website"
+            android:clickable="true"
+            android:hint="  Web Sitesi"
+            android:paddingStart="11dp"
+            android:paddingLeft="11dp"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/profildetay_yasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:drawableLeft="@drawable/tarih"
+            android:paddingStart="11dp"
+            android:paddingLeft="11dp"
+            android:hint="  Doğum Tarihi"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic"
+            android:inputType="textEmailAddress" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-30dp"
+            android:background="?android:attr/listDivider"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="-384dp"
+        android:layout_marginTop="125dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-30dp"
+            android:background="?android:attr/listDivider"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:clickable="true"
+            android:text="Eğitim Bilgileri"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/profildetay_universite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:clickable="true"
+            android:drawableLeft="@drawable/universite"
+            android:textColor="@android:color/black"
+            android:paddingStart="11dp"
+            android:hint="  Üniversite"
+            android:paddingLeft="11dp"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+        <TextView
+            android:id="@+id/profildetay_universitebolum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:drawableLeft="@drawable/ic_kalem"
+            android:clickable="true"
+            android:textColor="@android:color/black"
+            android:paddingStart="9dp"
+            android:paddingLeft="9dp"
+            android:hint="  Üniversite Bölüm"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="normal|bold|italic" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-30dp"
+            android:background="?android:attr/listDivider"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="-383dp"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-30dp"
+            android:background="?android:attr/listDivider"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:clickable="true"
+            android:text="Hakkımda"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/profildetay_hakkimda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginBottom="2dp"
+            android:gravity="start"
+            android:textStyle="normal|bold|italic"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

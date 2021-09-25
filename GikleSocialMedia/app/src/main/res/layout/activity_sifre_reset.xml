@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SifreResetActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/sifresifirla_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/sifresifirla_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_geri"
+                    android:id="@+id/sifresifirla_kapat"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Şifre Sıfırla"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_toEndOf="@id/sifresifirla_kapat"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/sifresifirla_kapat" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sifresifirla_mailtext"
+            android:inputType="textEmailAddress"
+            app:met_floatingLabel="normal"
+            android:hint="Mail Adresi"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sıfırla"
+            android:id="@+id/sifresifirla_buton"
+            android:gravity="center"
+            android:background="@drawable/buton"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textColor="#000"
+            android:text="Gikle şifre sıfırlama linki e-posta adresinize gönderilecektir."/>
+
+    </LinearLayout>
+
+</LinearLayout>

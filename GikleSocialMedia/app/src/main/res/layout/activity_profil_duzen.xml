@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ProfilDuzenActivity">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/profedit_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profedit_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_kapat"
+                    android:id="@+id/profedit_kapat"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profil Düzenle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_toEndOf="@id/profedit_kapat"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/profedit_kapat" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Kaydet"
+                    android:id="@+id/profedit_kaydet"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:background="@drawable/buton"
+                    android:textColor="@color/white"
+                    android:textStyle="italic|bold"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:id="@+id/profedit_pp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fotoğrafınızı Değiştirin"
+            android:layout_gravity="center"
+            android:id="@+id/profedit_degistirfototext"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Ad Soyad"
+            android:id="@+id/profedit_adsoyad"
+            app:met_floatingLabel="normal"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kullanıcı adı"
+            android:id="@+id/profedit_kullaniciadi"
+            app:met_floatingLabel="normal"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bio"
+            android:id="@+id/profedit_bio"
+            app:met_floatingLabel="normal"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="İş Yeri"
+            android:id="@+id/profedit_isyeri"
+            app:met_floatingLabel="normal"/>
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İş Pozisyonu"
+            android:id="@+id/profedit_ispozisyon"
+            app:met_floatingLabel="normal"/>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Facebook Kullanıcı Adı"
+                android:id="@+id/profedit_facebook"
+                app:met_floatingLabel="normal"/>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Twitter Kullanıcı Adı"
+                android:id="@+id/profedit_twitter"
+                app:met_floatingLabel="normal"/>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Instagram Kullanıcı Adı"
+                android:id="@+id/profedit_instagram"
+                app:met_floatingLabel="normal"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Web Sitesi"
+                android:id="@+id/profedit_website"
+                app:met_floatingLabel="normal"/>
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefon"
+            android:id="@+id/profedit_telefon"
+            android:ems="10"
+            android:inputType="phone"
+            app:met_floatingLabel="normal"/>
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doğum Tarihi"
+            android:id="@+id/profedit_yas"
+            app:met_floatingLabel="normal"
+            android:ems="10"
+            android:inputType="date" />
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mail"
+            android:id="@+id/profedit_mail"
+            app:met_floatingLabel="normal"/>
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Üniversite"
+            android:id="@+id/profedit_universite"
+            app:met_floatingLabel="normal"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Üniversite Bölüm"
+            android:id="@+id/profedit_universitebolum"
+            app:met_floatingLabel="normal"/>
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hakkımda"
+                android:id="@+id/profedit_hakkimda"
+                app:met_floatingLabel="normal"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

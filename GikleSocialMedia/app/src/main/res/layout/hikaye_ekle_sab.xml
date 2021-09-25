@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp">
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fonluyuvarlak"
+            android:id="@+id/hikayeekle_foto"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_arti"
+            android:id="@+id/hikayeekle_arti"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hikayeekle_metin"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:maxLines="1"/>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/fonsuz"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Kullanıcı Adı"
+        android:id="@+id/register_kullaniciadi"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Ad Soyad"
+        android:id="@+id/register_adsoyad"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Email"
+        android:id="@+id/register_email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Şifre"
+        android:id="@+id/register_sifre"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="KAYIT OL"
+        android:textStyle="italic|bold"
+        android:id="@+id/register_kayitolbuton"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesabınız var mı? Giriş yapın."
+        android:id="@+id/register_girisyapin"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

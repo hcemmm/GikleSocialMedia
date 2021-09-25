@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp"
+    android:layout_height="match_parent"
+    tools:context=".BaslangicActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/fonsuz"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Giris"
+        android:id="@+id/baslangic_giris"
+        android:textStyle="italic|bold"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@android:color/transparent"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Kayıt Ol"
+        android:textStyle="italic|bold"
+        android:id="@+id/baslangic_kayitol"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="@color/colorPrimary" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AnasayfaFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/anasayfa_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/anasayfa_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="84dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="-3dp"
+                    android:src="@drawable/giklebaslik" />
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/wp_fonsuzkamera"
+                    android:id="@+id/anasayfa_logo"
+                    android:layout_marginLeft="105dp" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/wp_fonsuz"
+                    android:id="@+id/anasayfa_logos"
+                    android:layout_marginTop="5dp"
+
+                    android:layout_marginLeft="205dp" />
+
+                <Switch
+                    android:id="@+id/anasayfa_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    android:layout_height="wrap_content"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    android:layout_marginLeft="175dp"/>
+
+                <ImageView
+                    android:id="@+id/anasayfa_gikle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/gikekle"
+                    android:clickable="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp" />
+
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anasayfa_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/anasayfa_recycler_story"
+                android:layout_margin="5dp"
+                android:layout_below="@id/anasayfa_bar"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/anasayfa_recycler_view_metin"
+                android:layout_below="@id/anasayfa_recycler_story"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/anasayfa_recycler_view"
+                android:layout_below="@id/anasayfa_recycler_story"
+                tools:ignore="ObsoleteLayoutParam" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/anasayfa_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

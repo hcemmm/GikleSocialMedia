@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ProfilFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/profil_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profil_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:id="@+id/profil_kullaniciadi"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profil_mesaj"
+                    android:src="@drawable/mesajbolum"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profil_mesajat"
+                    android:src="@drawable/mesajat"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profil_ayarlar"
+                    android:src="@drawable/ic_secenekler"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profil_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profil_top_bar"
+                android:padding="16dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/ic_profil"
+                    android:id="@+id/profil_profilfoto"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="4dp"
+                    android:layout_height="80dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/profil_posts"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gönderi"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/profil_gik"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gik"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/profil_takipci"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Takipçi"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_gravity="center"
+                                android:textSize="18sp"
+                                android:id="@+id/profil_takip"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Takip"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:text="Profili Düzenle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/profil_editprofil"
+                        android:background="@drawable/button_black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:id="@+id/profil_mid_bar"
+                android:layout_below="@id/profil_top_bar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:id="@+id/profil_advesoyad"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/profil_bio"
+                    android:maxLines="5"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/profil_websitesi"
+                    android:maxLines="5"
+                    android:clickable="true"
+                    android:textColor="@android:color/holo_blue_dark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/profil_dahabilgi"
+                    android:hint="Daha fazla bilgi"
+                    android:clickable="true"
+                    android:maxLines="5"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profil_mid_bar"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:id="@+id/profil_last_bar"
+                android:background="@drawable/button_black"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/profil_my_fotos"
+                    android:src="@drawable/gonderiler"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/profil_gikler"
+                    android:src="@drawable/gikler"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/profil_saved_fotos"
+                    android:src="@drawable/kaydetler"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/buttonBarButtonStyle"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profil_last_bar"
+                android:id="@+id/profil_recycler_view"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profil_last_bar"
+                android:visibility="gone"
+                android:id="@+id/profil_recycler_view_save"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profil_last_bar"
+                android:visibility="gone"
+                android:id="@+id/profil_recycler_view_gikler"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

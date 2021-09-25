@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/postmenu_duzenle"
+        android:title="Düzenle"/>
+
+    <item android:id="@+id/postmenu_sil"
+        android:title="Sil"/>
+
+    <item android:id="@+id/postmenu_bildir"
+        android:title="Bildir"/>
+
+</menu>

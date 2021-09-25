@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_ucnokta"
+        android:id="@+id/sabpost_more"
+        android:layout_margin="15dp"
+        android:layout_alignParentRight="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/sabpost_pp"
+                android:src="@drawable/ic_profil"
+                android:layout_margin="10dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sabpost_adsoyad"
+                android:layout_gravity="center_vertical"
+                android:hint="Kullanıcı Adı"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/sabpost_post_resim"
+                app:layout_constraintDimensionRatio="1:1"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/sabpost_begen"
+                android:src="@drawable/ic_boskalp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/sabpost_yorum"
+                android:src="@drawable/yorum"
+                android:layout_toEndOf="@id/sabpost_begen"
+                android:layout_marginStart="11dp"
+                android:layout_toRightOf="@id/sabpost_begen"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="12dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/sabpost_kaydet"
+                android:src="@drawable/ic_boskaydet"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:id="@+id/sabpost_begeniler"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:id="@+id/sabpost_paylasan"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/sabpost_aciklama"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tüm yorumları gör"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/sabpost_yorumlar"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Zaman"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/sabpost_zaman"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="10dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

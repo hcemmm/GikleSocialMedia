@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YorumGikActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/yorumgikactivy_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yorumgikactivy_recycler_view"
+        android:layout_above="@id/yorumgikactivy_bottom"
+        android:layout_below="@id/yorumgikactivy_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yorumgikactivy_bottom"
+        android:background="#fff"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/yorumgikactivy_pp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/yorumgikactivy_pp"
+            android:hint="Yorum yazın..."
+            android:id="@+id/yorumgikactivy_yorumekle"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@id/yorumgikactivy_post"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="Gönder"
+            android:id="@+id/yorumgikactivy_post"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:background="@drawable/buton"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

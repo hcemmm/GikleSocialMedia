@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:gravity="center"
+    tools:context=".ProfilResimActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/profilresim_bar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-140dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/profilresim_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            app:popupTheme="@menu/menu">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_gerigit"
+                    android:id="@+id/profilresim_kapat"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_indir"
+                    android:id="@+id/profilresim_more"
+                    android:layout_marginLeft="350dp" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="100dp"
+        android:elevation="8dp"
+        android:layout_marginTop="150dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profilresim_fotograf"
+            android:background="@drawable/ic_profil"
+            android:clickable="true" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

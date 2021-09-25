@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/yorumsab_pp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/yorumsab_pp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/yorumsab_pp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/yorumsab_kullaniciadi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yorumsab_yorum"
+            android:text=""
+            android:maxLines="5"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yorumsab_zaman"
+        android:textColor="@color/cardview_shadow_start_color"
+        android:textAlignment="viewEnd"
+        android:text="Tarih"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:textSize="9sp"
+        android:paddingLeft="10dp"
+        android:gravity="end" />
+
+</RelativeLayout>

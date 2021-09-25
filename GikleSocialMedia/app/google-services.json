@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "980413515478",
+    "project_id": "gikle-308cd",
+    "storage_bucket": "gikle-308cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980413515478:android:348ae3563b64b3ee62ab77",
+        "android_client_info": {
+          "package_name": "com.example.giklesocialmedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980413515478-rla6rrn4e7ltssn4e66l069bn28u9c1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAumJGBRmo6VDj-9c-sx_lN1oQ9hvQ4mDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980413515478-rla6rrn4e7ltssn4e66l069bn28u9c1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Profili Düzenle"
+        android:textColor="@android:color/black"
+        android:drawableStart="@drawable/profilduzen"
+        android:id="@+id/bottomsab_duzenle"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/ic_duzenle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Beğeniler"
+        android:textColor="@android:color/black"
+        android:drawableStart="@drawable/begeniler"
+        android:id="@+id/bottomsab_begeniler"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/ic_duzenle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Şifre"
+        android:textColor="@android:color/black"
+        android:drawableStart="@drawable/sifre"
+        android:id="@+id/bottomsab_sifre"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/ic_duzenle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Çıkış Yap"
+        android:drawableStart="@drawable/cikis"
+        android:id="@+id/bottomsab_cikis"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/ic_cikis" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+
+
+</LinearLayout>

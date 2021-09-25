@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mesajarkaplan"
+    tools:context=".MesajActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/mesajac_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mesajac_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/mesajac_pp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mesajac_adsoyad"
+                android:textSize="18sp"
+                android:layout_marginLeft="0dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp" />
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mesajac_recycler_view"
+        android:layout_below="@id/mesajac_bar_layout"
+        android:layout_above="@id/mesajac_bottom"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:id="@+id/mesajac_bottom"
+        android:background="#2f2f2f
+"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mesajac_metin"
+            android:background="@android:color/transparent"
+            android:hint="Mesaj..."
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:layout_toLeftOf="@id/mesajac_gonder"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_gonder"
+            android:id="@+id/mesajac_gonder"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
